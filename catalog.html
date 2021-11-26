@@ -1,13 +1,28 @@
 <!DOCTYPE html>
-<!-- <!DOCKTYPE html> -->
+
 <html lang="ru">
+
 <head>
     <meta charset='utf-8'>
     <title>Барбершоп «Бородинский»</title>
 </head>
+
 <body>
     <header>
-        <!-- Примерно повторить с index.html -->
+        <nav>
+            <a>
+                <img src='img/index-logo.svg' width='300' height='150' alt='Логтип барбершопа «Бородинский»'>
+            </a>
+            <ul>
+                <li><a href='info.html'>Информация</a></li>
+                <li><a href='info.html'>Новости</a></li>
+                <li><a href='info.html'>Прайс-лист</a></li>
+                <li><a href='info.html'>Магазин</a></li>
+                <li><a href='info.html'>Контакты</a></li>
+            </ul>
+                <button type='button'>Войти</button>
+  
+        </nav>
     </header>
 
     <main>
@@ -21,76 +36,107 @@
         </ul>
 
         <form>
-
-            <!-- Для техномарта -->
-            <!-- <fieldset>
-                <legend>Цена</legend>
-            
-                
-                <label for="volume">
-                    <input type="range" name="volume" min="0" max="3">
-                </label>
-
-                <label for="min">
-                    <input type="text" id="min" name="price" value="0">
-                </label>
-
-                <label for="max">
-                    <input type="text" id="max" name="price" value="30000">
-                </label>
-          
-            </fieldset> -->
-
-
-
             <fieldset>
                 <legend>Производители</legend>
-            
+
                 <input type="checkbox" id="baxter" value="Baxter of California" name="producers">
                 <label for="baxter">Baxter of California</label>
 
                 <input type="checkbox" id="mr-natty" value="MR Natty" name="producers">
                 <label for="mr-natty">MR Natty</label>
-          
+
+                <input type="checkbox" id="suavecito" value="Suavecito" name="producers">
+                <label for="suavecito">Suavecito</label>
+
+                <input type="checkbox" id="malin_goetz" value="Malin+Goetz" name="producers">
+                <label for="malin_goetz">Malin+Goetz</label>
+
+                <input type="checkbox" id="murray" value="Murray's" name="producers">
+                <label for="murray">Murray's</label>
+
+                <input type="checkbox" id="american-crew" value="American Crew" name="producers">
+                <label for="american-crew">American Crew</label>
+                
             </fieldset>
 
             <fieldset>
                 <legend>Группа товаров</legend>
-            
+
                 <input type="radio" id="shave-items" value="Бритвенные принадлежности" name="products">
                 <label for="shave-items">Бритвенные принадлежности</label>
-                
+
                 <input type="radio" id="shave-cream" value="Средства для ухода" name="products">
                 <label for="shave-cream">Средства для ухода</label>
 
                 <input type="radio" id="accessories" value="Аксессуары" name="products">
                 <label for="accessories">Аксессуары</label>
-          
+
             </fieldset>
             <button type="submit">Показать</button>
             <!-- <button type="reset">Очистить форму</button> -->
-          </form>
-          
-          <ul>
+        </form>
+
+        <ul>
             <li>
-                <h2>Набор хххх</h2>
+                <h2>
+                    Набор для путешествий<br>
+                    "Baxter of California"                
+                </h2>
                 <img src="#" alt="Набор хххх">
                 <a href="#">Купить</a>
                 <p>2900 P</p>
-
-
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+                <h2>
+                    Увлажняющий кондиционер<br>
+                    "Baxter of California"                
+                </h2>
+                <img src="#" alt="Набор хххх">
+                <a href="#">Купить</a>
+                <p>750 P</p>
+            </li>
+            <li>
+                <h2>
+                    Гель для волос<br>
+                    "Suavecito"                
+                </h2>
+                <img src="#" alt="Набор хххх">
+                <a href="#">Купить</a>
+                <p>290 P</p>
+            </li>
+            <li>
+                <h2>
+                    Глина для укладки волос<br>
+                    "American Crew"                
+                </h2>
+                <img src="#" alt="Набор хххх">
+                <a href="#">Купить</a>
+                <p>500 P</p>
+            </li>
+            <li>
+                <h2>
+                    Гель для волос<br>
+                    "American Crew"                
+                </h2>
+                <img src="#" alt="Набор хххх">
+                <a href="#">Купить</a>
+                <p>300 P</p>
+            </li>
+            <li>
+                <h2>
+                    Набор для бритья<br>
+                    "Baxter of California"                
+                </h2>
+                <img src="#" alt="Набор хххх">
+                <a href="#">Купить</a>
+                <p>3900 P</p>
+            </li>
         </ul>
 
 
         <!-- pagination -->
         <ul>
-            
+
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
             <li><a href="#">3</a></li>
@@ -99,7 +145,26 @@
     </main>
 
     <footer>
-        <!-- Примерно повторить с index.html -->
+        <p>
+            Барбершоп «Бородинский»<br>
+            Адрес: г.Санкт-Петербург,Б.Конюшенная,д.19/8<br>
+            <a href='map.html'>Как нас найти</a><br>				
+            Телефон
+            <a href="tel:+74956660266">+7 (495) 666-02-66</a>
+        </p>			
+        <div>
+            <p>Давайте дружить</p>	
+            <ul>				
+                <li><a href='#'>Вконтакте</a></li>				
+                <li><a href='#'>Фейсбук</a></li>				
+                <li><a href='#'>Инстаграм</a></li>				
+            </ul>
+        </div>
+        <p>
+        Разработано
+        <a href='https://htmlacademy.ru'>HTML Academy</a>			
+        </p>
     </footer>
 </body>
+
 </html>
