@@ -58,6 +58,44 @@
             </h2>
 
             <table style="border: 1px solid black; border-collapse: collapse">
+                <!-- У таблицы должна быть подпись, даже если её нет в макете -->
+                <caption>Прейскурант</caption>
+
+                <!-- Также сейчас используются теги thead и tbody.
+                     thead пока пропустим, а tbody используем -->
+                <tbody>
+                    <tr>
+                        <!-- В строке или ряде таблицы что-то должно характеризовывать контент.
+                            Типа - заголовок/содержимое, иначе это просто набор текста.
+                            Для этого в строках таблиц для ячеек используются теги th и td/
+                          -->
+                        <th style="border: 1px solid black" >
+                            Стрижка
+                        </th>
+                        <td style="border: 1px solid black" >
+                            1500 Р
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid black" >
+                            Стрижка бороды
+                        </th>
+                        <td style="border: 1px solid black" >
+                            500 Р
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid black" >
+                            накрутка волос
+                        </th>
+                        <td style="border: 1px solid black" >
+                            350 Р
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- <table style="border: 1px solid black; border-collapse: collapse">
                 <tr>
                     <td style="border: 1px solid black" >
                         Стрижка
@@ -82,7 +120,7 @@
                         350 Р
                     </td>
                 </tr>
-            </table>
+            </table> -->
         </section>
 
         <section>
