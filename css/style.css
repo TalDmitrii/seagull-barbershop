@@ -1,30 +1,35 @@
+@font-face {
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src: local("PT Sans Narrow"),
+	  url("../fonts/ptsansnarrow.woff2") format("woff2"),
+	  url("../fonts/ptsansnarrow.woff") format("woff");
+}
+
+@font-face {
+	font-family: "PT Sans Narrow";
+	font-style: normal;
+	font-display: swap;
+	font-weight: 700;
+	src: local("PT Sans Narrow"),
+	  url("../fonts/ptsansnarrowbold.woff2") format("woff2"),
+	  url("../fonts/ptsansnarrowbold.woff") format("woff");
+}
+
 body {
 	margin: 0;
 	padding: 0;
-
 	font-family: "PT sans Narrow", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 700;
-	color: #ffffff;
-	text-transform: uppercase;	
-
-	background-color: #000000;
-	/* background-image: url('../img/main-bg.png');
-	background-position: top center;
-	background-repeat: no-repeat; */
-}
-
-.main-page {	
-
-	background-color: #000000;
-	background-image: url('../img/main-bg.png');
-	background-position: top center;
-	background-repeat: no-repeat;
+	font-weight: 400;
+	text-transform: uppercase;
 }
 
 a {
-text-decoration: none;
+	text-decoration: none;
 }
 
 .button {
@@ -43,6 +48,15 @@ text-decoration: none;
 .button:focus,
 .button:active {
 	background-color: #663d15;
+}
+
+.visually-hidden {
+	position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
 }
 
 .main-navigation {
@@ -70,7 +84,84 @@ text-decoration: none;
 	background-color: #242424;
 }
 
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Главная страница */
+.main-page-bg {
+	background-color: #000000;
+	background-image: url('../img/main-bg.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+/* Главная страница */
+
+
+/* Внутренние страницы */
+.inner-page-bg {
+	background-color: #ffffff;
+	background-image: url('../img/inner-bg.png');
+	color: #000000;
+}
+
+.inner-page-title {
+	font-size: 30px;
+	line-height: 42px;
+	font-weight: 700;
+}
+
+.breadcrumbs {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.breadcrumbs__item {
+	position: relative;
+	margin-right: 16px;
+	padding-right: 24px;
+}
+
+.breadcrumbs__item::after {
+	content: "";
+	display: block;
+	width: 8px;
+	height: 8px;
+	background-color: #000000;
+	position: absolute;
+	right: 0;
+	top: 7px;
+	transform: rotate(45deg);
+}
+
+.breadcrumbs__item:last-child {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.breadcrumbs__item:last-child::after {
+	display: none;
+}
+
+.breadcrumbs__link {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus {
+	color: #663d15;
+}
+/* Внутренние страницы */
+
 .features-list {
+	color: #ffffff;
 	list-style: none;
 }
 
@@ -83,11 +174,55 @@ text-decoration: none;
 	line-height: 42px;
 }
 
+/* БЭМ */
+/* 
+	БЭМ - блок/элемент/модификатор
+
+ */
+.features {
+	/* общие стили */
+}
+
+.features__list {
+	/* Потомок .features */
+}
+
+.features__item {
+	/* Потомок .features */
+}
+
+.features__header {
+	font-size: 14px;
+	color: black;
+}
+
+.features__header--red {
+	color: red;
+}
+
+/* 
+<div class='features'>
+	<ul class='features__list'>
+		<li class='features__item'>
+			<h3 class='features__header'>Быстро</h3>
+			<p class='features__text'>Мы делаем свою работу быстро! Два час пролетит незаметно и вы - счастливый обладатель стильной
+				стрижки-минутки!</p>
+		</li>
+		<li class='features__item'>
+			<h3 class='features__header features__header--red'>Быстро</h3>
+			<p class='features__text'>Мы делаем свою работу быстро! Два час пролетит незаметно и вы - счастливый обладатель стильной
+				стрижки-минутки!</p>
+		</li>
+	</ul>
+</div>
+*/
+/* БЭМ */
+
 .index-columns {
 	color: #000000;
 	
 	background-color: #f8f5f2;
-	background-image: url('img/pattern-light.jpg');
+	background-image: url('../img/inner-bg.png');
 	background-position: 0 0;
 	background-repeat: repeat;
 }
@@ -104,6 +239,59 @@ text-decoration: none;
 .news-item time {
 	text-transform: none;
 }	
+
+/* Каталог */
+.catalog-form__fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+.catalog-form__legend {
+	font-size: 24px;
+    line-height: 30px;
+	font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.checkbox {
+	padding-left: 42px;
+	position: relative;
+}
+
+.checkbox__decor {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #000000;
+}
+
+.checkbox__decor::before,
+.checkbox__decor::after {
+	content: "";
+	width: 2px;
+	height: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.checkbox__decor::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.checkbox__decor::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.catalog-form input:checked ~ .checkbox__decor::before,
+.catalog-form input:checked ~ .checkbox__decor::after {
+	background-color: #000000;
+}
+/* Каталог */
 	
 .gallery-content {
 	background-color: #cccccc;
@@ -166,7 +354,7 @@ text-decoration: none;
 	color: #000000;
 	
 	background-color: #f8f3f0;
-	background-image: url('img/pattern-light.ipg');
+	background-image: url('../img/inner-bg.png');
 	background-position: 0 0;
 	background-repeat: repeat;
 }	
@@ -204,34 +392,12 @@ text-decoration: none;
 .restore:hover,
 .restore:focus {
 	text-decoration: none;
-}	
-
-.price-page {
-	background-color: #ffffff;
-	background-image: url('../img/inner-bg.png');
-	color: #000000;
-}
-
-.price-page_container {
-	width: 960px;
-	margin: 0 auto;
 }
 
 .page-header {
 	font-size: 30px;
 	line-height: 42px;
 	font-weight: bold;
-}
-	
-.breadcrumbs a {
-	font-size: 14px;
-	line-height: 20px;
-	color: #000000;
-}
-
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
-	color: #663d15;
 }
 
 .slogan {
