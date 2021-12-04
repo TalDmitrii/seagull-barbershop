@@ -2,34 +2,39 @@
 
 <html lang="ru">
 
-<head>
-    <meta charset='utf-8'>
-    <title>Барбершоп «Бородинский»</title>
-</head>
+    <head>
+        <meta charset='utf-8'>
+        <title>Барбершоп «Бородинский»</title>
+        <link href='https://fonts.googleapis.com/cssXXXXXXX' rel='stylesheet'>
+        <link href='css/normalize.css' rel='stylesheet'>
+        <link href='css/style.css' rel='stylesheet'>
+    </head>
 
-<body>
-    <header>
-        <nav>
-            <a>
-                <img src='img/index-logo.svg' width='300' height='150' alt='Логтип барбершопа «Бородинский»'>
-            </a>
-            <ul>
-                <li><a href='info.html'>Информация</a></li>
-                <li><a href='info.html'>Новости</a></li>
-                <li><a href='info.html'>Прайс-лист</a></li>
-                <li><a href='info.html'>Магазин</a></li>
-                <li><a href='info.html'>Контакты</a></li>
-            </ul>
-                <button type='button'>Войти</button>
-
-        </nav>
+<body class="body-index">
+	<header class='main-header'>
+		<nav class='main-navigation'>
+			<a class='main-header-logo'>
+				<img src='img/index-logo.svg' width='368' height='153' alt='Логтип барбершопа «Бородинский»'>
+			</a>
+			<ul class='site-navigation'>
+				<li><a href='info.html'>Информация</a></li>
+				<li><a href='news.html'>Новости</a></li>
+				<li><a href='price.html'>Прайс-лист</a></li>
+				<li><a href='catalog.html'>Магазин</a></li>
+				<li><a href='contacts.html'>Контакты</a></li>
+			</ul>
+			<ul class='user-navigation'>
+				<li><a href="login.html">Вход</a></li>
+			</ul>
+			<!-- <button type='button'>Войти</button> -->
+		</nav>
     </header>
 
-    <main style='background: url(img/main-bg.png)'>
-        <h1>НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</h1>
+    <main class="item-page">
+        <h1 class="title-item">НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</h1>
 
         <!-- breadcrumbs -->
-        <ul>
+        <ul class="breadcrumbs-item">
             <li><a href="#">Главная</a></li>
             <li><a href="/">Магазин</a></li>
             <li><a href="/">Средства для ухода</a></li>
@@ -38,7 +43,7 @@
         
 
         <!-- Здесь, возможно нужна форма или типа того. Болшой рисунок раскрывает маленькие -->
-        <ul>
+        <ul class="img-item">
             <li>
                 <img src="img/item/item-image-main.jpg" width='460' height='498' alt="Набор для путешествий">
             </li>
@@ -55,8 +60,8 @@
 
         <div>
             <!-- При выборе картинки меняется содержимое ниже? -->
-            <p>Есть в наличии</p>
-            <p>Артикул: DEXTER-AE</p>
+            <p class="available-item">Есть в наличии</p>
+            <p class="article-item">Артикул: DEXTER-AE</p>
             <p>
                 Travel kit - <a href="#">необходимый аксессуар</a> во время любого<br>
                 путешествия. В аккуратной кожаной сумке находится все, что<br>
@@ -65,11 +70,14 @@
                 для бритья, крем после бритья, шампунь, набор также может<br>
                 стать отличным подарком.
             </p>
-            2900 Р
-            <a href="#">КУПИТЬ</a>
+            <div class="cost-item">
+                2900 Р
+            </div>
+            
+            <a class="button-item" href="#">КУПИТЬ</a>
 
-            <p>В НАБОР ВХОДЯТ:</p>
-            <ul>
+            <p class="product-list">В НАБОР ВХОДЯТ:</p>
+            <ul class="product">
                 <li>Средство для умывания (50 мл)</li>
                 <li>Увлажняющий крем (50 мл)</li>
                 <li>Крем для бритья (50 мл)</li>
@@ -80,35 +88,36 @@
 
     </main>
 
-    <footer style='background: url(img/footer-bg.png)'>
-        <p>
-            Барбершоп «Бородинский»<br>
-            Адрес: г.Санкт-Петербург,Б.Конюшенная,д.19/8<br>
-            <a href='map.html'>Как нас найти</a><br>
-            Телефон
-            <a href="tel:+74956660266">+7 (495) 666-02-66</a>
-        </p>
-        <div>
-            <p>Давайте дружить</p>
-				<ul>				
-					<li>
-						<img src='img/icons/vk.svg' >					
-						<a href='#'>Вконтакте</a>
-					</li>				
-					<li>
-						<img src='img/icons/facebook.svg' >							
-					<a href='#'>Фейсбук</a></li>				
-					<li>
-						<img src='img/icons/instagram.svg' >							
-						<a href='#'>Инстаграм</a>
-					</li>				
-				</ul>
-        </div>
-        <p>
-            Разработано
-            <a href='https://htmlacademy.ru'>HTML Academy</a>
-        </p>
-    </footer>
+	<footer style='background: url(img/footer-bg.png)'>
+		<p>
+			Барбершоп «Бородинский»<br>
+			Адрес: г.Санкт-Петербург,Б.Конюшенная,д.19/8<br>
+			<a href='map.html'>Как нас найти</a><br>
+			Телефон
+			<a href="tel:+74956660266">+7 (495) 666-02-66</a>
+		</p>
+		<div>
+			<p>Давайте дружить</p>
+			<ul>
+				<li>
+					<img src='img/icons/vk.svg'>
+					<a class='social-button' href='#'>Вконтакте</a>
+				</li>
+				<li>
+					<img src='img/icons/facebook.svg'>
+					<a class='social-button' href='#'>Фейсбук</a>
+				</li>
+				<li>
+					<img src='img/icons/instagram.svg'>
+					<a class='social-button' href='#'>Инстаграм</a>
+				</li>
+			</ul>
+		</div>
+		<p class='footer-copyright'>
+			Разработано
+			<a href='https://htmlacademy.ru'>HTML Academy</a>
+		</p>
+	</footer>
 </body>
 
 </html>
