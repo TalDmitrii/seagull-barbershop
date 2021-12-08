@@ -31,18 +31,18 @@
 
     <div class="inner-page-bg">
         <main class="container">
-            <h1 class="inner-page-title">Средства для ухода</h1>
+            <h1>Средства для ухода</h1>
 
             <!-- breadcrumbs -->
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">Главная</a>
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="/">Магазин</a>
+                    <a class="breadcrumbs__link" href="catalog.html">Магазин</a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="">Средства для ухода</a>
+                    <a class="breadcrumbs__link" href="#">Средства для ухода</a>
                 </li>
             </ul>
 
@@ -90,77 +90,85 @@
                 <fieldset class="catalog-form__fieldset">
                     <legend class="catalog-form__legend">Группа товаров:</legend>
 
-                    <input type="radio" id="shave-items" value="Бритвенные принадлежности" name="products">
-                    <label for="shave-items">Бритвенные принадлежности</label>
+                    <label class="radio" >
+                        <input class="visually-hidden" type="radio" id="shave-items" value="Бритвенные принадлежности" name="products">
+                        <span class="radio__decor"></span>
+                        Бритвенные принадлежности
+                    </label>
 
-                    <input type="radio" id="shave-cream" value="Средства для ухода" name="products">
-                    <label for="shave-cream">Средства для ухода</label>
+                    <label class="radio" >
+                        <input class="visually-hidden" type="radio" id="shave-cream" value="Средства для ухода" name="products" checked>
+                        <span class="radio__decor"></span>
+                        Средства для ухода
+                    </label>
 
-                    <input type="radio" id="accessories" value="Аксессуары" name="products">
-                    <label for="accessories">Аксессуары</label>
-
+                    <label class="radio" >
+                        <input class="visually-hidden" type="radio" id="accessories" value="Аксессуары" name="products">
+                        <span class="radio__decor"></span>
+                        Аксессуары
+                    </label>
                 </fieldset>
-                <button class="catalog-form-button" type="submit">Показать</button>
+                <button class="button" type="submit">Показать</button>
                 <!-- <button type="reset">Очистить форму</button> -->
             </form>
 
-            <ul class="catalog-product-list">
-                <li>
+            <ul class="catalog-list">
+                <li class="catalog__item">
                     <h2>
                         Набор для путешествий<br>
                         «Baxter of California»
                     </h2>
                     <img src="img/catalog/product-1.jpg" width="220" height="165"
-                        alt="Набор для путешествий «Baxter of California»">
-                    <a href="#">Купить</a>
+                        alt="Набор для путешествий «BAXTER OF CALIFORNIA»">
+                    <a class="button" href="item.html">Купить</a>
                     <p>2900 P</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <h2>
                         Увлажняющий кондиционер<br>
                         «Baxter of California»
                     </h2>
                     <img src="img/catalog/product-2.jpg" width="220" height="165"
                         alt="Увлажняющий кондиционер «Baxter of California»">
-                    <a href="#">Купить</a>
+                    <a class="button" href="#">Купить</a>
                     <p>750 P</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <h2>
                         Гель для волос<br>
                         «Suavecito»
                     </h2>
                     <img src="img/catalog/product-3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
-                    <a href="#">Купить</a>
+                    <a class="button" href="#">Купить</a>
                     <p>290 P</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <h2>
                         Глина для укладки волос<br>
                         «American Crew»
                     </h2>
                     <img src="img/catalog/product-4.jpg" width="220" height="165"
                         alt="Глина для укладки волос «American Crew»">
-                    <a href="#">Купить</a>
+                    <a class="button" href="#">Купить</a>
                     <p>500 P</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <h2>
                         Гель для волос<br>
                         «American Crew»
                     </h2>
                     <img src="img/catalog/product-5.jpg" width="220" height="165" alt="Гель для волос «American Crew»">
-                    <a href="#">Купить</a>
+                    <a class="button" href="#">Купить</a>
                     <p>300 P</p>
                 </li>
-                <li>
+                <li class="catalog__item">
                     <h2>
                         Набор для бритья<br>
                         «Baxter of California»
                     </h2>
                     <img src="img/catalog/product-6.jpg" width="220" height="165"
                         alt="Набор для бритья «Baxter of California»">
-                    <a href="#">Купить</a>
+                    <a class="button" href="#">Купить</a>
                     <p>3900 P</p>
                 </li>
             </ul>
@@ -168,10 +176,10 @@
 
             <!-- pagination -->
             <ul class="catolog-pagination">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
+                <li class="button"><a href="#">1</a></li>
+                <li class="button"><a href="#">2</a></li>
+                <li class="button"><a href="#">3</a></li>
+                <li class="button"><a href="#">4</a></li>
             </ul>
         </main>
     </div>
@@ -188,15 +196,15 @@
 			<p>Давайте дружить</p>
 			<ul>
 				<li>
-					<img src='img/icons/vk.svg'>
+					<img src='img/icons/vk.svg' alt="Мы Вконтакте">
 					<a class='social-button' href='#'>Вконтакте</a>
 				</li>
 				<li>
-					<img src='img/icons/facebook.svg'>
+					<img src='img/icons/facebook.svg' alt="Мы в Фейсбук">
 					<a class='social-button' href='#'>Фейсбук</a>
 				</li>
 				<li>
-					<img src='img/icons/instagram.svg'>
+					<img src='img/icons/instagram.svg' alt="Мы в Инстаграм">
 					<a class='social-button' href='#'>Инстаграм</a>
 				</li>
 			</ul>

@@ -3,152 +3,154 @@
 <html lang="ru">
 
 <head>
-	<meta charset='utf-8'>
-	<title>Барбершоп «Бородинский»</title>
-	<link href='https://fonts.googleapis.com/cssXXXXXXX' rel='stylesheet'>
-	<link href='css/normalize.css' rel='stylesheet'>
-	<link href='css/style.css' rel='stylesheet'>
+    <meta charset='utf-8'>
+    <title>Барбершоп «Бородинский»</title>
+    <link href='https://fonts.googleapis.com/cssXXXXXXX' rel='stylesheet'>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
 </head>
 
 <body class="body-index">
-	<header class='main-header'>
-		<nav class='main-navigation'>
-			<a class='main-header-logo'>
-				<img src='img/index-logo.svg' width='368' height='153' alt='Логтип барбершопа «Бородинский»'>
-			</a>
-			<ul class='site-navigation'>
-				<li><a href='info.html'>Информация</a></li>
-				<li><a href='news.html'>Новости</a></li>
-				<li><a href='price.html'>Прайс-лист</a></li>
-				<li><a href='catalog.html'>Магазин</a></li>
-				<li><a href='contacts.html'>Контакты</a></li>
-			</ul>
-			<ul class='user-navigation'>
-				<li><a href="login.html">Вход</a></li>
-			</ul>
-			<!-- <button type='button'>Войти</button> -->
-		</nav>
+    <header class='main-header'>
+        <nav class='main-navigation'>
+            <a class='main-header-logo'>
+                <img src='img/index-logo.svg' width='368' height='153' alt='Логтип барбершопа «Бородинский»'>
+            </a>
+            <ul class='site-navigation'>
+                <li><a href='info.html'>Информация</a></li>
+                <li><a href='news.html'>Новости</a></li>
+                <li><a href='price.html'>Прайс-лист</a></li>
+                <li><a href='catalog.html'>Магазин</a></li>
+                <li><a href='contacts.html'>Контакты</a></li>
+            </ul>
+            <ul class='user-navigation'>
+                <li><a href="login.html">Вход</a></li>
+            </ul>
+            <!-- <button type='button'>Войти</button> -->
+        </nav>
     </header>
 
-    <main  class='price-page'>
-        <h1 class="price-page_container">ПРАЙС-ЛИСТ</h1>
+    <div class="inner-page-bg">
+        <main class='container'>
+            <h1>ПРАЙС-ЛИСТ</h1>
 
-        <!-- breadcrumbs -->
-        <ul class="breadcrumbs-price">
-            <li><a href="#">Главная</a></li>
-            <li><a href="/">ПРАЙС-ЛИСТ</a></li>
-        </ul>
-
-        <p class="slogan">
-            ИСТИННО МУЖСКАЯ КЛАССИКА
-        </p>
-
-        <section>
-            <h2 class="brand">
-                МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br>
-                ЛУЧШИЕ СРЕДСТВА:
-            </h2>
-            <ul class="list-brand">
-                <li>BAXTER OF CALIFORNIA</li>
-                <li>MR NATTY</li>
-                <li>SUAVECITO</li>
-                <li>MALIN+GOETZ</li>
+            <!-- breadcrumbs -->
+            <ul class="breadcrumbs-price">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#">ПРАЙС-ЛИСТ</a></li>
             </ul>
-        </section>
 
-        <section>
-            <h2 class="service">
-                ЦЕНЫ НА УСЛУГИ<br>
-                НАШИХ МАСТЕРОВ:
-            </h2>
+            <p class="slogan">
+                ИСТИННО МУЖСКАЯ КЛАССИКА
+            </p>
 
-            <table class="table" >
-                <!-- У таблицы должна быть подпись, даже если её нет в макете -->
-                <caption class="visually-hidden">Прейскурант</caption>
+            <section>
+                <h2 class="brand">
+                    МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br>
+                    ЛУЧШИЕ СРЕДСТВА:
+                </h2>
+                <ul class="list-brand">
+                    <li>BAXTER OF CALIFORNIA</li>
+                    <li>MR NATTY</li>
+                    <li>SUAVECITO</li>
+                    <li>MALIN+GOETZ</li>
+                </ul>
+            </section>
 
-                <!-- Также сейчас используются теги thead и tbody.
+            <section>
+                <h2 class="service">
+                    ЦЕНЫ НА УСЛУГИ<br>
+                    НАШИХ МАСТЕРОВ:
+                </h2>
+
+                <table class="table">
+                    <!-- У таблицы должна быть подпись, даже если её нет в макете -->
+                    <caption class="visually-hidden">Прейскурант</caption>
+
+                    <!-- Также сейчас используются теги thead и tbody.
                      thead пока пропустим, а tbody используем -->
-                <tbody class="table-cost">
-                    <tr>
-                        <!-- В строке или ряде таблицы что-то должно характеризовывать контент.
+                    <tbody class="table-cost">
+                        <tr>
+                            <!-- В строке или ряде таблицы что-то должно характеризовывать контент.
                             Типа - заголовок/содержимое, иначе это просто набор текста.
                             Для этого в строках таблиц для ячеек используются теги th и td/
                           -->
-                        <th>
-                            Стрижка
-                        </th>
-                        <td>
-                            1500 Р
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            Стрижка бороды
-                        </th>
-                        <td>
-                            500 Р
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>
-                            накрутка волос
-                        </th>
-                        <td>
-                            350 Р
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                            <th>
+                                Стрижка
+                            </th>
+                            <td>
+                                1500 Р
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Стрижка бороды
+                            </th>
+                            <td>
+                                500 Р
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                накрутка волос
+                            </th>
+                            <td>
+                                350 Р
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        </section>
+            </section>
 
-        <section>
-            <h2 class="about_us">НЕСКОЛЬКО СЛОВ О НАС:</h2>
-            <p>
-                Наша парикмахерская занимается исключительно мужскими<br>
-                стрижкамми. Стрижка каждого клиента для нас - это уникальная<br>
-                и продуманная до мелочей работа. Мы не работаем награ<br>
-                количество. Мы работаем на качество.
-            </p>
-            <p>
-                Наша парикмахерская расположенна в центре города, поэтому<br>
-                сделать стильную стрижку можно в любое время, даже в<br>
-                обеденный перерыв. Здесь вы можете погрузиться в удобную<br>
-                для вас атмосферу, чувствовать себя комфортно и свободно!
-            </p>
-        </section>
-    </main>
+            <section>
+                <h2 class="about_us">НЕСКОЛЬКО СЛОВ О НАС:</h2>
+                <p>
+                    Наша парикмахерская занимается исключительно мужскими<br>
+                    стрижкамми. Стрижка каждого клиента для нас - это уникальная<br>
+                    и продуманная до мелочей работа. Мы не работаем награ<br>
+                    количество. Мы работаем на качество.
+                </p>
+                <p>
+                    Наша парикмахерская расположенна в центре города, поэтому<br>
+                    сделать стильную стрижку можно в любое время, даже в<br>
+                    обеденный перерыв. Здесь вы можете погрузиться в удобную<br>
+                    для вас атмосферу, чувствовать себя комфортно и свободно!
+                </p>
+            </section>
+        </main>
+    </div>
 
-	<footer style='background: url(img/footer-bg.png)'>
-		<p>
-			Барбершоп «Бородинский»<br>
-			Адрес: г.Санкт-Петербург,Б.Конюшенная,д.19/8<br>
-			<a href='map.html'>Как нас найти</a><br>
-			Телефон
-			<a href="tel:+74956660266">+7 (495) 666-02-66</a>
-		</p>
-		<div>
-			<p>Давайте дружить</p>
-			<ul>
-				<li>
-					<img src='img/icons/vk.svg'>
-					<a class='social-button' href='#'>Вконтакте</a>
-				</li>
-				<li>
-					<img src='img/icons/facebook.svg'>
-					<a class='social-button' href='#'>Фейсбук</a>
-				</li>
-				<li>
-					<img src='img/icons/instagram.svg'>
-					<a class='social-button' href='#'>Инстаграм</a>
-				</li>
-			</ul>
-		</div>
-		<p class='footer-copyright'>
-			Разработано
-			<a href='https://htmlacademy.ru'>HTML Academy</a>
-		</p>
-	</footer>
+    <footer style='background: url(img/footer-bg.png)'>
+        <p>
+            Барбершоп «Бородинский»<br>
+            Адрес: г.Санкт-Петербург,Б.Конюшенная,д.19/8<br>
+            <a href='map.html'>Как нас найти</a><br>
+            Телефон
+            <a href="tel:+74956660266">+7 (495) 666-02-66</a>
+        </p>
+        <div>
+            <p>Давайте дружить</p>
+            <ul>
+                <li>
+                    <img src='img/icons/vk.svg' alt="Мы Вконтакте">
+                    <a class='social-button' href='#'>Вконтакте</a>
+                </li>
+                <li>
+                    <img src='img/icons/facebook.svg' alt="Мы в Фейсбук">
+                    <a class='social-button' href='#'>Фейсбук</a>
+                </li>
+                <li>
+                    <img src='img/icons/instagram.svg' alt="Мы в Инстаграм">
+                    <a class='social-button' href='#'>Инстаграм</a>
+                </li>
+            </ul>
+        </div>
+        <p class='footer-copyright'>
+            Разработано
+            <a href='https://htmlacademy.ru'>HTML Academy</a>
+        </p>
+    </footer>
 </body>
 
 </html>
