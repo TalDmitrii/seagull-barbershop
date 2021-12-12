@@ -31,7 +31,7 @@
 
     <div class="inner-page-bg">
         <main class="container">
-            <h1>Средства для ухода</h1>
+            <h1 class="inner-page-title">Средства для ухода</h1>
 
             <!-- breadcrumbs -->
             <ul class="breadcrumbs">
@@ -52,6 +52,7 @@
                     
                     <label class="checkbox" for="baxter">
                         <input class="visually-hidden" type="checkbox" id="baxter" value="Baxter of California" name="producers" checked>
+                        <span>Разделитель</span>
                         <span class="checkbox__decor"></span>
                         Baxter of California
                     </label>
@@ -113,37 +114,53 @@
             </form>
 
             <ul class="catalog-list">
-                <li class="catalog__item">
-                    <h2>
-                        Набор для путешествий<br>
-                        «Baxter of California»
-                    </h2>
+                <li class="catalog-list__item">
                     <img src="img/catalog/product-1.jpg" width="220" height="165"
                         alt="Набор для путешествий «BAXTER OF CALIFORNIA»">
-                    <a class="button" href="item.html">Купить</a>
-                    <p>2900 P</p>
-                </li>
-                <li class="catalog__item">
-                    <h2>
-                        Увлажняющий кондиционер<br>
-                        «Baxter of California»
+                    <h2 class="catalog-list__header">
+                        <a class="catalog-list__link" href="#">
+                            Набор для путешествий<br>
+                            <span>«Baxter of California»</span>
+                        </a>
                     </h2>
+                    <div class="catalog-list__price-wrap">
+                        <p class="catalog-list__price">2900 P</p>
+                        <a class="catalog-list__button button" href="item.html">Купить</a>
+                    </div>
+                    <button class="btn-test">Тест</button>
+                </li>
+                <li class="catalog-list__item">
                     <img src="img/catalog/product-2.jpg" width="220" height="165"
                         alt="Увлажняющий кондиционер «Baxter of California»">
-                    <a class="button" href="#">Купить</a>
-                    <p>750 P</p>
-                </li>
-                <li class="catalog__item">
-                    <h2>
-                        Гель для волос<br>
-                        «Suavecito»
+                    <h2 class="catalog-list__header">
+                        <a class="catalog-list__link" href="#">
+                            Увлажняющий кондиционер<br>
+                            <span>«Baxter of California»</span>
+                        </a>
                     </h2>
-                    <img src="img/catalog/product-3.jpg" width="220" height="165" alt="Гель для волос «Suavecito»">
-                    <a class="button" href="#">Купить</a>
-                    <p>290 P</p>
+                    <div class="catalog-list__price-wrap">
+                        <p class="catalog-list__price">750 P</p>
+                        <a class="catalog-list__button button" href="item.html">Купить</a>
+                    </div>
+                    <button class="btn-test">Тест</button>
                 </li>
-                <li class="catalog__item">
-                    <h2>
+                <li class="catalog-list__item">
+                    <img src="img/catalog/product-3.jpg" width="220" height="165"
+                        alt="Увлажняющий кондиционер «Baxter of California»">
+                    <h2 class="catalog-list__header">
+                        <a class="catalog-list__link" href="#">
+                            Гель для волос<br>
+                            <span>«Suavecito»</span>
+                        </a>
+                    </h2>
+                    <div class="catalog-list__price-wrap">
+                        <p class="catalog-list__price">290 P</p>
+                        <a class="catalog-list__button button" href="item.html">Купить</a>
+                    </div>
+                    <button class="btn-test">Тест</button>
+                </li>
+                <!-- <li class="catalog-list__item">
+                    <h2 class="catalog-list__header">
                         Глина для укладки волос<br>
                         «American Crew»
                     </h2>
@@ -152,8 +169,8 @@
                     <a class="button" href="#">Купить</a>
                     <p>500 P</p>
                 </li>
-                <li class="catalog__item">
-                    <h2>
+                <li class="catalog-list__item">
+                    <h2 class="catalog-list__header">
                         Гель для волос<br>
                         «American Crew»
                     </h2>
@@ -161,8 +178,8 @@
                     <a class="button" href="#">Купить</a>
                     <p>300 P</p>
                 </li>
-                <li class="catalog__item">
-                    <h2>
+                <li class="catalog-list__item">
+                    <h2 class="catalog-list__header">
                         Набор для бритья<br>
                         «Baxter of California»
                     </h2>
@@ -170,16 +187,16 @@
                         alt="Набор для бритья «Baxter of California»">
                     <a class="button" href="#">Купить</a>
                     <p>3900 P</p>
-                </li>
+                </li> -->
             </ul>
 
 
             <!-- pagination -->
-            <ul class="catolog-pagination">
-                <li class="button"><a href="#">1</a></li>
-                <li class="button"><a href="#">2</a></li>
-                <li class="button"><a href="#">3</a></li>
-                <li class="button"><a href="#">4</a></li>
+            <ul class="pagination">
+                <li class="pagination__item"><a class="button" href="#">1</a></li>
+                <li class="pagination__item"><a class="button" href="#">2</a></li>
+                <li class="pagination__item"><a class="button" href="#">3</a></li>
+                <li class="pagination__item"><a class="button" href="#">4</a></li>
             </ul>
         </main>
     </div>

@@ -34,11 +34,19 @@ a {
 
 .button {
 	font: inherit;
-	
 	text-align: center;
 	color: #ffffff;
 	vertical-align: middle;
 	text-transform: uppercase;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: bold;
+
+	padding: 10px;
+	/* padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px; */
 	
 	background-color: #000000;
 	border: none;
@@ -157,6 +165,24 @@ a {
 .breadcrumbs__link:hover,
 .breadcrumbs__link:focus {
 	color: #663d15;
+}
+
+.pagination {
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.pagination__item {
+	margin-right: 8px;
+}
+
+.pagination__item a {
+	display: block;
+	/* min-width: 42px; */
+	width: 42px;
 }
 /* Внутренние страницы */
 
@@ -287,6 +313,11 @@ a {
 	transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.catalog-form input:checked ~ .checkbox__decor::before,
+.catalog-form input:checked ~ .checkbox__decor::after {
+	background-color: #000000;
+}
+
 .radio {
 	padding-left: 42px;
 	position: relative;
@@ -303,27 +334,98 @@ a {
 	border-radius: 50%;
 }
 
-.radio__decor::before,
-.radio__decor::after {
+.radio__decor::before {
 	content: "";
 	width: 8px;
 	height: 8px;
 	position: absolute;
-	top: 5px;
-	left: 5px;
+	top: 50%;
+	left: 50%;
 	border-radius: 50%;
 }
 
-
-
-.catalog-form input:checked ~ .checkbox__decor::before,
-.catalog-form input:checked ~ .checkbox__decor::after {
-	background-color: #000000;
+.radio__decor::before {
+	transform: translate(-50%, -50%) rotate(45deg);
 }
+
 
 .catalog-form input:checked ~ .radio__decor::before,
 .catalog-form input:checked ~ .radio__decor::after {
 	background-color: #000000;
+}
+
+.catalog-list__link {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: none;
+	color: #000000;
+}
+
+.catalog-list__link span {
+	text-transform: uppercase;
+}
+
+.catalog-list__price-wrap {
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .1);
+	margin: 0 16px 16px;
+}
+
+.catalog-list {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.catalog-list__item {
+	position: relative;
+	width: 220px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0 0 15px 0 rgb(0 1 1 / 20%);
+}
+
+.catalog-list__item img {
+	margin-bottom: 12px;
+	display: block;
+}
+
+.catalog-list__header {
+	margin: 0 0 16px;
+	padding: 0 16px;
+}
+
+.catalog-list__price {
+	flex-grow: 1;
+
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.catalog-list__button {
+	min-width: 78px;
+	align-self: stretch;
+}
+
+.btn-test {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	transform: translate(-50%, -50%);
+}
+
+.catalog-list__item:hover .btn-test {
+	display: block;
+}
+
+.catalog-list__item:hover img {
+	opacity: 0;
 }
 /* Каталог */
 	
