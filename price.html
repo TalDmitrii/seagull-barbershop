@@ -36,29 +36,36 @@
 
             <!-- breadcrumbs -->
             <ul class="breadcrumbs">
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">ПРАЙС-ЛИСТ</a></li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">ПРАЙС-ЛИСТ</a>
+                </li>
             </ul>
 
             <p class="slogan">
                 ИСТИННО МУЖСКАЯ КЛАССИКА
             </p>
 
-            <section>
-                <h2 class="brand">
+            <section class="brand-rewiew">
+                <h2 class="price-title">
                     МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br>
                     ЛУЧШИЕ СРЕДСТВА:
                 </h2>
-                <ul class="list-brand">
-                    <li>BAXTER OF CALIFORNIA</li>
-                    <li>MR NATTY</li>
-                    <li>SUAVECITO</li>
-                    <li>MALIN+GOETZ</li>
-                </ul>
+                <div>
+                    <ul class="list-brand">
+                        <li class="item-brand">BAXTER OF CALIFORNIA</li>
+                        <li class="item-brand">MR NATTY</li>
+                        <li class="item-brand">SUAVECITO</li>
+                        <li class="item-brand">MALIN+GOETZ</li>
+                    </ul>
+                </div>
+
             </section>
 
-            <section>
-                <h2 class="service">
+            <section class="price-rewiew">
+                <h2 class="price-title">
                     ЦЕНЫ НА УСЛУГИ<br>
                     НАШИХ МАСТЕРОВ:
                 </h2>
@@ -75,26 +82,26 @@
                             Типа - заголовок/содержимое, иначе это просто набор текста.
                             Для этого в строках таблиц для ячеек используются теги th и td/
                           -->
-                            <th>
+                            <th class="cell">
                                 Стрижка
                             </th>
-                            <td>
+                            <td class="cell">
                                 1500 Р
                             </td>
                         </tr>
                         <tr>
-                            <th>
+                            <th class="cell">
                                 Стрижка бороды
                             </th>
-                            <td>
+                            <td class="cell">
                                 500 Р
                             </td>
                         </tr>
                         <tr>
-                            <th>
+                            <th class="cell">
                                 накрутка волос
                             </th>
-                            <td>
+                            <td class="cell">
                                 350 Р
                             </td>
                         </tr>
@@ -104,19 +111,21 @@
             </section>
 
             <section>
-                <h2 class="about_us">НЕСКОЛЬКО СЛОВ О НАС:</h2>
-                <p>
-                    Наша парикмахерская занимается исключительно мужскими<br>
-                    стрижкамми. Стрижка каждого клиента для нас - это уникальная<br>
-                    и продуманная до мелочей работа. Мы не работаем награ<br>
-                    количество. Мы работаем на качество.
-                </p>
-                <p>
-                    Наша парикмахерская расположенна в центре города, поэтому<br>
-                    сделать стильную стрижку можно в любое время, даже в<br>
-                    обеденный перерыв. Здесь вы можете погрузиться в удобную<br>
-                    для вас атмосферу, чувствовать себя комфортно и свободно!
-                </p>
+                <h2 class="price-title">НЕСКОЛЬКО СЛОВ О НАС:</h2>
+                <div class="shop-inner">
+                    <p class="shop-description">
+                        Наша парикмахерская занимается исключительно мужскими<br>
+                        стрижкамми. Стрижка каждого клиента для нас - это уникальная<br>
+                        и продуманная до мелочей работа. Мы не работаем награ<br>
+                        количество. Мы работаем на качество.
+                    </p>
+                    <p class="shop-description">
+                        Наша парикмахерская расположенна в центре города, поэтому<br>
+                        сделать стильную стрижку можно в любое время, даже в<br>
+                        обеденный перерыв. Здесь вы можете погрузиться в удобную<br>
+                        для вас атмосферу, чувствовать себя комфортно и свободно!
+                    </p>
+                </div>
             </section>
         </main>
     </div>
@@ -132,23 +141,23 @@
         <div>
             <p>Давайте дружить</p>
             <ul>
-                <li>
-                    <img src='img/icons/vk.svg' alt="Мы Вконтакте">
-                    <a class='social-button' href='#'>Вконтакте</a>
+                <li class="footer-button button">
+                    <img src='img/icons/vk.svg' alt="Мы Вконтакте" width="20px" height="20px">
+                    <a class='social-button' href='#'></a>
                 </li>
-                <li>
+                <li class="footer-button button">
                     <img src='img/icons/facebook.svg' alt="Мы в Фейсбук">
-                    <a class='social-button' href='#'>Фейсбук</a>
+                    <a class='social-button' href='#'></a>
                 </li>
-                <li>
+                <li class="footer-button button">
                     <img src='img/icons/instagram.svg' alt="Мы в Инстаграм">
-                    <a class='social-button' href='#'>Инстаграм</a>
+                    <a class='social-button' href='#'></a>
                 </li>
             </ul>
         </div>
         <p class='footer-copyright'>
-            Разработано
-            <a href='https://htmlacademy.ru'>HTML Academy</a>
+            Разработано:
+            <a class="button" href='https://htmlacademy.ru'>HTML Academy</a>
         </p>
     </footer>
 </body>

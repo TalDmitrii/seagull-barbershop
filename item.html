@@ -36,55 +36,67 @@
 
             <!-- breadcrumbs -->
             <ul class="breadcrumbs">
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Магазин</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Средства для ухода</a></li>
-                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</a></li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="catalog.html">Магазин</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="catalog.html">Средства для ухода</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">НАБОР ДЛЯ ПУТЕШЕСТВИЙ "BAXTER OF CALIFORNIA"</a>
+                </li>
             </ul>
 
 
             <!-- Здесь, возможно нужна форма или типа того. Болшой рисунок раскрывает маленькие -->
-            <ul class="img-item">
-                <li>
-                    <img src="img/item/item-image-main.jpg" width='460' height='498' alt="Набор для путешествий">
-                </li>
-                <li>
-                    <img src="img/item/item-image1.jpg" width='140' height='149' alt="Набор для путешествий">
-                </li>
-                <li>
-                    <img src="img/item/item-image2.jpg" width='140' height='149' alt="Набор для путешествий">
-                </li>
-                <li>
-                    <img src="img/item/item-image3.jpg" width='140' height='149' alt="Набор для путешествий">
-                </li>
-            </ul>
+            <div class="product__item">
+                <ul class="product__item-img">
+                    <li>
+                        <img src="img/item/item-image-main.jpg" width='460' height='498' alt="Набор для путешествий">
+                    </li>
+                    <li>
+                        <img src="img/item/item-image1.jpg" width='140' height='149' alt="Набор для путешествий">
+                    </li>
+                    <li>
+                        <img src="img/item/item-image2.jpg" width='140' height='149' alt="Набор для путешествий">
+                    </li>
+                    <li>
+                        <img src="img/item/item-image3.jpg" width='140' height='149' alt="Набор для путешествий">
+                    </li>
+                </ul>
+            </div>
 
-            <div>
+            <div class="item-about">
                 <!-- При выборе картинки меняется содержимое ниже? -->
-                <p class="available-item">Есть в наличии</p>
-                <p class="article-item">Артикул: DEXTER-AE</p>
+                <span class="available-item">Есть в наличии</span>
+                <span class="code-item">Артикул: DEXTER-AE</span>
                 <p>
-                    Travel kit - <a href="#">необходимый аксессуар</a> во время любого<br>
+                    Travel kit - <a class="ref-item" href="#">необходимый аксессуар</a> во время любого<br>
                     путешествия. В аккуратной кожаной сумке находится все, что<br>
                     нужно для бритья и ухода за кожей во время рабочей поездки<br>
                     или отдыха: средство для умывания, увлажняющий крем, крем<br>
                     для бритья, крем после бритья, шампунь, набор также может<br>
                     стать отличным подарком.
                 </p>
-                <div class="cost-item">
-                    2900 Р
+
+                <div class="item__price-wrap">
+                    <p class="item__price">2900 P</p>
+                    <a class="item__button button" href="#">Купить</a>
                 </div>
 
-                <a class="button-item" href="#">КУПИТЬ</a>
-
-                <p class="product-list">В НАБОР ВХОДЯТ:</p>
-                <ul class="product">
-                    <li>Средство для умывания (50 мл)</li>
-                    <li>Увлажняющий крем (50 мл)</li>
-                    <li>Крем для бритья (50 мл)</li>
-                    <li>Крем после бритья, шампунь (50 мл)</li>
-                    <li>Удобная кожаная косметика</li>
-                </ul>
+                <div>
+                    <p class="product-title">В НАБОР ВХОДЯТ:</p>
+                    <ul class="product-list">
+                        <li class="product-item">Средство для умывания (50 мл)</li>
+                        <li class="product-item">Увлажняющий крем (50 мл)</li>
+                        <li class="product-item">Крем для бритья (50 мл)</li>
+                        <li class="product-item">Крем после бритья, шампунь (50 мл)</li>
+                        <li class="product-item">Удобная кожаная косметика</li>
+                    </ul>
+                </div>
             </div>
         </main>
     </div>
@@ -101,23 +113,23 @@
         <div>
             <p>Давайте дружить</p>
             <ul>
-                <li>
-                    <img src='img/icons/vk.svg' alt="Мы Вконтакте">
-                    <a class='social-button' href='#'>Вконтакте</a>
+                <li class="footer-button button">
+                    <img src='img/icons/vk.svg' alt="Мы Вконтакте" width="20px" height="20px">
+                    <a class='social-button' href='#'></a>
                 </li>
-                <li>
+                <li class="footer-button button">
                     <img src='img/icons/facebook.svg' alt="Мы в Фейсбук">
-                    <a class='social-button' href='#'>Фейсбук</a>
+                    <a class='social-button' href='#'></a>
                 </li>
-                <li>
+                <li class="footer-button button">
                     <img src='img/icons/instagram.svg' alt="Мы в Инстаграм">
-                    <a class='social-button' href='#'>Инстаграм</a>
+                    <a class='social-button' href='#'></a>
                 </li>
             </ul>
         </div>
         <p class='footer-copyright'>
-            Разработано
-            <a href='https://htmlacademy.ru'>HTML Academy</a>
+            Разработано:
+            <a class="button" href='https://htmlacademy.ru'>HTML Academy</a>
         </p>
     </footer>
 </body>
