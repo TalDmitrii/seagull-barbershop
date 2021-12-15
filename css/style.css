@@ -75,7 +75,7 @@ a {
 	background-color: #000000;
 
 	flex-wrap: wrap;
-	max-width: 620px;
+
 }
 
 .site-navigation ,
@@ -116,6 +116,7 @@ a {
 	background-color: #ffffff;
 	background-image: url('../img/inner-bg.png');
 	color: #000000;
+	font-weight: bold;
 }
 
 .inner-page-title {
@@ -542,23 +543,11 @@ a {
 	font-weight: bold;
 }
 
-.slogan {
-	font-size: 48px;
-	line-height: 48px;
-}
+
 	
 .brand {
 	font-size: 24px;
     line-height: 30px;
-}
-
-.table {
-	margin-top: 30px;
-    border-collapse: collapse;
-}
-
-.table-cost {
-	border: 1px solid black;
 }
 
 .catalog__item {
@@ -673,8 +662,19 @@ footer a {
     transform: rotate(45deg);
 }
 
+/* Страница Price */
+
+.slogan {
+	font-size: 48px;
+	line-height: 48px;
+}
+
 .list-brand {
 	list-style: none;
+}
+
+.item-brand {
+	font-weight: bold;
 }
 
 .item-brand::before {
@@ -694,16 +694,27 @@ footer a {
     line-height: 30px;
 }
 
-.shop-inner {
-    display: flex;
+.table {
+	margin-top: 30px;
+    border-collapse: collapse;
 }
 
-.shop-description {
-	margin: 10px;
+.table-cost {
+	border: 1px solid black;
 }
 
 .cell {
 	border: 2px solid #000;
     padding: 8px 0 8px 17px;
     width: 50%;
+	font-weight: bold;
+}
+
+.shop-inner {
+    display: flex;
+}
+
+.shop-description {
+	margin: 10px;
+	font-weight: bold;
 }
