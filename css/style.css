@@ -166,6 +166,10 @@ a {
 	color: #000000;
 }
 
+.breadcrumbs__item:last-child .breadcrumbs__link {
+	color: #aba9a7;
+}
+
 .breadcrumbs__link:hover,
 .breadcrumbs__link:focus {
 	color: #663d15;
@@ -467,19 +471,6 @@ a {
 .footer-contacts a:hover,
 .footer-contacts a:focus {
 	text-decoration: none;
-}
-	
-.footer-social {
-	text-align: center;
-}	
-
-.footer-social ul {
-	list-style: none;
-}	
-	
-.social-button {
-	color: #ffffff;
-	margin: auto;
 }	
 	
 .footer-copyright {
@@ -563,21 +554,6 @@ a {
 	padding-top: 7px;
 }
 
-footer {
-	color: #ffffff;
-}
-footer a {
-	color: #ffffff;
-}
-
-.footer-button {
-	width: 43px;
-	height: 43px;
-	margin: 0 5px 5px 0;
-	display: inline;
-}
-
-
 .product__item {
 	width: 460px;
 	padding-top: 8px;
@@ -590,12 +566,12 @@ footer a {
 	list-style: none;
 }
 
-.item-about {
+/* .item-about {
 	display: flex;
 	flex-wrap: wrap;
 	width: 380px;
 	font-weight: bold;
-}
+} */
 
 .available-item {
 	display: block;
@@ -642,6 +618,8 @@ footer a {
 }
 
 .product-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -665,17 +643,66 @@ footer a {
 /* Страница Price */
 
 .slogan {
+	position: relative;
 	font-size: 48px;
 	line-height: 48px;
+	text-align: center;
+	padding-left: 175px;
+	padding-right: 175px;
+}
+
+.slogan::before,
+.slogan::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 150px;
+	background-color: #000000;
+	position: absolute;
+	top: 50%;
+}
+
+.slogan::before {
+	left: 0;
+}
+.slogan::after {
+	right: 0;
 }
 
 .list-brand {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
 .item-brand {
+	position: relative;
 	font-weight: bold;
+	padding-left: 20px;
 }
+
+.item-brand--red {
+	color: red;
+}
+
+/* Позиционирование */
+/* .test-pos {
+	position: relative;
+	width: 600px;
+	height: 600px;
+	border: 10px solid black;
+	padding: 50px;
+}
+
+.item-pos {
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	background-color: blue;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+} */
 
 .item-brand::before {
     content: "";
@@ -684,8 +711,9 @@ footer a {
     height: 7px;
     background-color: #000000;
     position: absolute;
+	top: 50%;
     left: 0;
-    transform: rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .price-title {
@@ -705,9 +733,13 @@ footer a {
 
 .cell {
 	border: 2px solid #000;
-    padding: 8px 0 8px 17px;
+    padding: 8px 8px 8px 17px;
     width: 50%;
 	font-weight: bold;
+}
+
+.cell--th {
+	text-align: left;
 }
 
 .shop-inner {
@@ -717,4 +749,46 @@ footer a {
 .shop-description {
 	margin: 10px;
 	font-weight: bold;
+}
+
+.page-footer {
+	background-color: black;
+	background-image: url('../img/footer-bg.png');
+	color: #ffffff;
+}
+.page-footer a {
+	color: #ffffff;
+}
+
+.page-footer__link {
+	text-decoration: underline;
+}
+
+.social-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.social-list__item {
+	margin: 0 5px 5px 0;
+}
+
+.social-list__link {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+	background-color: #ffffff;
+}
+
+.social-list__link:hover .social-list__img,
+.social-list__link:focus .social-list__img {
+	fill: #000000;
 }
