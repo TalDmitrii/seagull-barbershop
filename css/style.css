@@ -277,20 +277,30 @@ a {
 /* БЭМ */
 
 .index-columns {
+	display: flex;
+	justify-content: space-between;
 	color: #000000;
 	
 	background-color: #f8f5f2;
 	background-image: url('../img/inner-bg.png');
 	background-position: 0 0;
 	background-repeat: repeat;
+
+	padding: 20px 80px 50px;
 }
 
 .index-columns h2 {
 	font-size: 30px;
 	line-height: 42px;
+	margin: 25px 0 20px;
+}
+
+.news {
+	width: 380px;
 }
 
 .news-list {
+	padding: 0;
 	list-style: none;
 }	
 
@@ -462,11 +472,33 @@ a {
 	opacity: 0;
 }
 /* Каталог */
+
+.gallery {
+	width: 380px;
+}
 	
 .gallery-content {
 	background-color: #cccccc;
 	border: 7px solid #ffffff;
+	margin: 0 0 40px;
 }	
+.gallery-content a {
+	display: block;
+
+}	
+
+.appointment {
+	width: 380px;
+}
+
+.appointment-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.appointment-item input {
+	width: 140px;
+}
 
 .appointment-item input {
 	font: inherit;
@@ -487,6 +519,10 @@ a {
 	background-repeat: repeat;
 }	
 	
+.contacts {
+	width: 380px;
+}
+
 .footer-contacts a {
 	color: #ffffff;
 	text-decoration: underline;
@@ -831,3 +867,4 @@ a {
     border-radius: 50%;
     background: blue;
 } */
+
