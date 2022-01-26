@@ -310,9 +310,28 @@ a {
 	list-style: none;
 }	
 
+.news-item p {
+	margin: 14px 0 0 0;
+}	
+
+.news-item time {
+	display: block;
+	margin-bottom: 20px;
+}	
+
 .news-item time {
 	text-transform: none;
 }	
+
+.news-item .second-time {
+	display: block;
+	margin-bottom: 30px;
+}
+
+.news .button {
+	display: block;
+	width: 140px;
+}
 
 /* Каталог */
 .catalog-form__fieldset {
@@ -510,6 +529,10 @@ a {
 	width: 300px;
 }
 
+.appointment-info {
+	margin: 14px 0 10px;
+}
+
 .appointment-form {
 	display: flex;
 	flex-wrap: wrap;
@@ -520,6 +543,16 @@ a {
 	width: 140px;
 	display: flex;
 	flex-direction: column;
+}
+
+.appointment-item label {
+	padding-left: 18px;
+	margin-bottom: 8px;
+}
+
+.appointment-item input {
+	padding: 8px 0 8px 16px;
+	margin-bottom: 8px;
 }
 
 .appointment-item input {
@@ -538,6 +571,7 @@ a {
 
 .appointment-btn {
 	width: 100%;
+	margin-top: 10px;
 }
 	
 .main-footer {
@@ -550,7 +584,25 @@ a {
 }	
 	
 .contacts {
+	display: block;
 	width: 380px;
+}
+
+.contacts a {
+	display: block;
+	width: 140px;
+}
+
+.contacts p {
+margin: 14px 0 20px;
+}
+
+.contacts-conteiner {
+	display: flex;
+}
+
+.button-map {
+	margin-right: 20px;
 }
 
 .footer-contacts a {
