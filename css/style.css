@@ -568,15 +568,17 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
-	margin: 0;
+	margin: 0 -10px; /* Отрицательные отступы на контейнере */
 	padding: 0;
 }
+
 
 .catalog-list__item {
 	position: relative;
 	width: 220px;
 	height: 286px;
-	margin-right: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
 	margin-bottom: 20px;
 	background-color: #ffffff;
 	box-shadow: 0 0 15px 0 rgb(0 1 1 / 20%);
@@ -620,10 +622,6 @@ a {
 
 .catalog-list__item:hover img {
 	opacity: 0;
-}
-
-.catalog-list__item:nth-child(3n) {
-	margin-right: 0;
 }
 
 .catalog-conteiner {
@@ -749,6 +747,10 @@ margin: 14px 0 20px;
 .footer-contacts a:focus {
 	text-decoration: none;
 }	
+
+.page-footer-title {
+	text-align: center;
+}
 	
 .footer-copyright {
 	text-align: center;
@@ -756,6 +758,8 @@ margin: 14px 0 20px;
 }	
 	
 .footer-copyright a {
+	width: 140px;
+	margin-top: 13px;
 	display: block;
 }
 
@@ -782,13 +786,6 @@ margin: 14px 0 20px;
 .footer-button {
 	justify-content: space-between;
 }
-
-.footer-button a {
-	display: block;
-	width: 43px;
-	height: 43px;
-}
-
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
@@ -880,6 +877,7 @@ margin: 14px 0 20px;
 	text-align: center;
 	padding-left: 175px;
 	padding-right: 175px;
+	margin: 0 0 65px 0;
 }
 
 .slogan::before,
@@ -1034,19 +1032,21 @@ margin: 14px 0 20px;
 }
 
 .social-button:hover path {
-	fill: red;
+	fill: #000000;
 }
 
-/* Кнопка футера соц, круглая */
-/* a.social-button {
+.social-button:hover {
+	background-color: #ffffff;
+}
+
+.social-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: blue;
-} */
+    width: 43px;
+    height: 43px;
+    background: #000000;
+}
 
 
 /* Страница Item */
