@@ -128,8 +128,8 @@ a {
 
 .main-header-logo {
 	display: block;
+	width: 370px;
 	margin: 0 auto 40px;
-	padding-left: 15px;
 }
 
 .container {
@@ -154,7 +154,6 @@ a {
 /* Item */
 
 .body-item {
-	background-color: #ffffff;
 	background: #f8f5f2 url(../img/inner-bg.png);
 }
 
