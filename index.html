@@ -20,7 +20,7 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 			<div class="user-enter">
-				<a class="user-navigation" href="login.html">Вход</a></li>
+				<a class="user-navigation j-login-link" href="login.html">Вход</a></li>
 			</div>
 		</nav>
 	</header>
@@ -99,7 +99,7 @@
 						сб-вс: с 10:00 до 19:00
 					</p>
 					<div class="contacts-conteiner">
-						<a class="button button-map" href="map.html">Как проехать</a>
+						<a class="button button-map j-button-map" href="map.html">Как проехать</a>
 						<a class="button" href="contacts.html">Обратная связь</a>
 					</div>
 
@@ -181,14 +181,13 @@
 		</div>
 	</footer>
 
-	<section class="modal modal-login">
+	<section class="modal modal-login j-modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите свой логин и пароль.</p>
-		<!-- Здесь будет форма -->
-		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+		<form class="login-form" action="https://1echo.htmlacademy.ru" method="post">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
-				<input class="login-icon-password" id="user-login" type="text" name="login"
+				<input class="login-icon-user" id="user-login" type="text" name="login"
 					placeholder="email@example.com">
 			</p>
 			<p>
@@ -196,9 +195,9 @@
 				<input class="login-icon-password" id="user-password" type="password" name="password"
 					placeholder="********">
 			</p>
-			<p>
-				<label for="login-password-info">
-					<input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+			<p class="login-help">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden" id="login-checkbox">
 					<span class="checkbox-indicator"></span>
 					Запомни меня
 				</label>
@@ -208,17 +207,23 @@
 				Войти
 			</button>
 		</form>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close j-modal-close" type="button">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
 	</section>
 
-	<section class="modal modal-map">
+	<section class="modal modal-map j-modal-map">
 		<h2 class="visually-hidden">Как до нас добратья</h2>
 		<p>
 			<img src="img/map.jpg" width="780" height="560"
 				alt="Офис компании по адресу ул. Болшая Конюшенная 19/8, Санкт-Петербург">
 		</p>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close j-modal-close" type="button">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
 	</section>
+
+	<script src="js/script.js"></script>
 </body>
 
 </html>
