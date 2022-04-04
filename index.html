@@ -19,7 +19,9 @@
 				<li><a href="catalog.html">Магазин</a></li>
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
-			<a class="user-navigation" href="login.html">Вход</a></li>
+			<div class="user-enter">
+				<a class="user-navigation j-login-link" href="login.html">Вход</a></li>
+			</div>
 		</nav>
 	</header>
 
@@ -37,13 +39,13 @@
 				<ul class="features-list">
 					<li class="features-item">
 						<h3>Быстро</h3>
-						<p>Мы делаем свою работу быстро! Два час пролетит незаметно и вы - счастливый обладатель
+						<p>Мы делаем свою работу быстро! Два часа пролетит незаметно и вы - счастливый обладатель
 							стильной
 							стрижки-минутки!</p>
 					</li>
 					<li class="features-item">
 						<h3>Круто</h3>
-						<p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола и кино! Во всяком случае
+						<p>Забудьте, как вы стриглись раньше. <br> Мы сделаем из вас звезду футбола или кино! Во всяком случае
 							внешне.</p>
 					</li>
 					<li class="features-item">
@@ -97,7 +99,7 @@
 						сб-вс: с 10:00 до 19:00
 					</p>
 					<div class="contacts-conteiner">
-						<a class="button button-map" href="map.html">Как проехать</a>
+						<a class="button button-map j-button-map" href="map.html">Как проехать</a>
 						<a class="button" href="contacts.html">Обратная связь</a>
 					</div>
 
@@ -106,13 +108,13 @@
 				<section class="appointment">
 					<h2>Записаться</h2>
 					<p class="appointment-info">
-						Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
+						Укажите желаемую дату и время и мы свяжемся <br> с вами для подтверждения брони
 					</p>
 					<!-- Здесь будет форма -->
 					<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
 						<p class="appointment-item">
 							<label for="appoinment-date">Дата</label>
-							<input id="appoinment-date" type="text" name="date" value="08.10.17">
+							<input id="appoinment-date" type="text" name="date" value="08.10.2017">
 						</p>
 						<p class="appointment-item">
 							<label for="appoinment-time">Время</label>
@@ -179,14 +181,13 @@
 		</div>
 	</footer>
 
-	<section class="modal modal-login">
+	<section class="modal modal-login j-modal-login">
 		<h2>Личный кабинет</h2>
 		<p>Введите свой логин и пароль.</p>
-		<!-- Здесь будет форма -->
-		<form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+		<form class="login-form" action="https://1echo.htmlacademy.ru" method="post">
 			<p>
 				<label class="visually-hidden" for="user-login">Логин</label>
-				<input class="login-icon-password" id="user-login" type="text" name="login"
+				<input class="login-icon-user" id="user-login" type="text" name="login"
 					placeholder="email@example.com">
 			</p>
 			<p>
@@ -194,9 +195,9 @@
 				<input class="login-icon-password" id="user-password" type="password" name="password"
 					placeholder="********">
 			</p>
-			<p>
-				<label for="login-password-info">
-					<input type="checkbox" name="remember" class="visually-hidden" id="login-password-info">
+			<p class="login-help">
+				<label class="login-checkbox">
+					<input type="checkbox" name="remember" class="visually-hidden" id="login-checkbox">
 					<span class="checkbox-indicator"></span>
 					Запомни меня
 				</label>
@@ -206,17 +207,23 @@
 				Войти
 			</button>
 		</form>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close j-modal-close" type="button">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
 	</section>
 
-	<section class="modal modal-map">
+	<section class="modal modal-map j-modal-map">
 		<h2 class="visually-hidden">Как до нас добратья</h2>
 		<p>
 			<img src="img/map.jpg" width="780" height="560"
 				alt="Офис компании по адресу ул. Болшая Конюшенная 19/8, Санкт-Петербург">
 		</p>
-		<button class="modal-close" type="button">Закрыть</button>
+		<button class="modal-close j-modal-close" type="button">
+			<span class="visually-hidden">Закрыть</span>
+		</button>
 	</section>
+
+	<script src="js/script.js"></script>
 </body>
 
 </html>
